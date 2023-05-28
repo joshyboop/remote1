@@ -1,0 +1,19 @@
+TEST PLANS
+
+FUNCTION: Create Employee
+1.) Test Basic Functionality
+2.) Test Creating an Employee with ID that already exists
+3.) Test Creating an Employee with missing attributes
+4.) Test Creating an Employee with negative age
+5.) Test Creating an Employee with negative ID
+
+FUNCTION: Get Employee by ID
+1.) Test Basic Functionality
+2.) Test Getting an Employee that does not exist
+
+FUNCTION: Delete Employee by ID
+1.) Test Basic Functionality
+2.) Test Deleting an Employee that does not exist
+
+INTEGRATION
+1.) Test Getting a recently deleted employee
