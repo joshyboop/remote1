@@ -128,21 +128,5 @@ class TestEmployeeManagement(unittest.TestCase):
 
         self.assertEqual(None, management.get_employee_by_id(603))
 
-    # GET EMPLOYEE AFTER DELETING
-    def test_get_employee_by_id_AFTER_DELETING_DUMMY(self):
-        management = employee_management.EmployeeManagement()
-
-        emp1 = employee_management.Employee("Paul", 25, 601, "Culinary Arts")
-        emp2 = employee_management.Employee("Ringo", 21, 602, "Literature")
-        emp3 = employee_management.Employee("George", 20, 603, "Astrophysics")
-
-        management.create_employee(emp1)
-        management.create_employee(emp2)
-        management.create_employee(emp3)
-
-        management.delete_employee_by_id(600)
-
-        self.assertEqual(None, management.get_employee_by_id(603))
-
 if __name__ == "__main__":
      unittest.main()
